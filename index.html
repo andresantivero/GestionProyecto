@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DolaritoFE - Presentación</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="presentation-shell">
+      <div class="background-orbs" aria-hidden="true">
+        <span class="orb orb-a"></span>
+        <span class="orb orb-b"></span>
+        <span class="orb orb-c"></span>
+        <span class="grid"></span>
+      </div>
+
+      <main class="deck">
+        <header class="topbar">
+          <div class="brand">
+            <div class="logo" aria-hidden="true">D</div>
+            <div>
+              <p class="eyebrow">Dolarito</p>
+              <h1>Dolarito — Presentación</h1>
+              <p class="tagline">Convierte una necesidad financiera en una experiencia clara y moderna.</p>
+            </div>
+          </div>
+          <div class="slide-badge" id="slideBadge">
+            <strong>Introducción</strong>
+          </div>
+        </header>
+
+        <section class="stage" aria-label="Presentación del proyecto">
+          <article class="slide-card" id="slideCard">
+            <div class="slide-decor" aria-hidden="true">
+              <span class="dot dot-main"></span>
+              <span class="dot dot-secondary"></span>
+            </div>
+
+            <div class="slide-content">
+              <div class="slide-copy">
+                <h2 id="slideTitle">Introducción</h2>
+                <p class="slide-summary" id="slideSummary"></p>
+                <ul class="slide-points" id="slidePoints"></ul>
+              </div>
+
+              <aside class="slide-aside">
+                <div class="highlight-box">
+                  <span class="highlight-label">Enfoque</span>
+                  <strong id="slideFocus"></strong>
+                </div>
+
+                <div class="meta-grid">
+                  <div>
+                    <span class="meta-label">Tema</span>
+                    <strong id="slideTopic"></strong>
+                  </div>
+                  <div>
+                    <span class="meta-label">Nivel</span>
+                    <strong id="slideLevel"></strong>
+                  </div>
+                </div>
+              </aside>
+            </div>
+          </article>
+        </section>
+
+        <footer class="footer">
+          <div class="nav-controls">
+            <button class="nav-button" id="prevBtn" type="button">Anterior</button>
+            <button class="nav-button primary" id="nextBtn" type="button">Siguiente</button>
+          </div>
+
+          <div class="dots" id="dots" aria-label="Navegación de secciones"></div>
+        </footer>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
