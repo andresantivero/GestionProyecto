@@ -2,6 +2,46 @@
 const slides = [
   {
     number: '01',
+    title: 'Prestacion Final Gestion de Proyectos',
+    summary: 'Presentación final del proyecto — gestión y resultados.',
+    points: [],
+    focus: 'Portada',
+    topic: 'Presentación',
+    level: 'Portada',
+    accent: '#06b6d4',
+    accentSoft: '#ecfeff',
+    icon: `
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <rect x="3" y="4" width="18" height="16" rx="2" />
+        <path d="M8 8H16" />
+        <path d="M8 12H16" />
+      </svg>`
+  },
+  {
+    number: '02',
+    title: 'Nuestro grupo',
+    summary: '',
+    points: [],
+    focus: 'Equipo',
+    topic: 'Presentación',
+    level: 'Inicio',
+    accent: '#f97316',
+    accentSoft: '#fff7ed',
+    images: [
+      { src: 'img/gestion_laser_1.png', name: 'Gustavo Guaimas' },
+      { src: 'img/gestion_laser_2.png', name: 'Cristian Purpura' },
+      { src: 'img/gestion_laser_3.png', name: 'Andres Antivero' }
+    ],
+    icon: `
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <circle cx="8" cy="8" r="3.2" />
+        <circle cx="16" cy="8" r="3.2" />
+        <path d="M3.8 20c.8-3.2 3.2-5.1 5.8-5.1s5 1.9 5.8 5.1" />
+        <path d="M12.4 20c.6-2.6 2.7-4.3 5.1-4.3 2.4 0 4.5 1.7 5.1 4.3" />
+      </svg>`
+  },
+  {
+    number: '03',
     title: 'Qué resuelve',
     summary:
       'Control de cuentas, transacciones y conversión de moneda desde un único punto, con flujos claros y seguridad.',
@@ -14,26 +54,38 @@ const slides = [
     topic: 'Valor',
     level: 'General',
     accent: '#7c3aed',
-    accentSoft: '#f3e8ff'
+    accentSoft: '#f3e8ff',
+    icon: `
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <rect x="1" y="6" width="18" height="12" rx="2" />
+        <circle cx="17" cy="12" r="1.5" fill-role />
+      </svg>`
   },
   {
-    number: '02',
-    title: 'Qué hace el proyecto',
-    summary:
-      'Interfaz para autenticarse, consultar saldos, revisar movimientos, crear transacciones y administrar el perfil de usuario.',
+    number: '04',
+    title: 'Metodología Scrum',
+    summary: 'Scrum como marco de trabajo para organizar tareas, priorizar entregas y revisar avances de forma continua.',
     points: [
-      'Login y refresh token',
-      'Billetera ARS / USD',
-      'Historial de transacciones y cambio de moneda'
+      'Sprints cortos con objetivos claros',
+      'Backlog priorizado según valor y urgencia',
+      'Reuniones de planificación, seguimiento y retrospectiva'
     ],
-    focus: 'Funcionalidad',
-    topic: 'Producto',
-    level: 'MVP',
-    accent: '#0ea5e9',
-    accentSoft: '#e0f2fe'
+    focus: 'Scrum',
+    topic: 'Proceso',
+    level: 'Organización',
+    accent: '#8b5cf6',
+    accentSoft: '#f5f3ff',
+    icon: `
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <rect x="3" y="4" width="18" height="16" rx="2" />
+        <path d="M3 9H21" />
+        <path d="M8 4V20" />
+        <path d="M16 4V20" />
+        <path d="M8 13H16" />
+      </svg>`
   },
   {
-    number: '03',
+    number: '05',
     title: 'Alcance funcional',
     summary:
       'Módulos principales y cobertura funcional priorizados para la entrega inicial.',
@@ -46,10 +98,16 @@ const slides = [
     topic: 'Alcance',
     level: 'MVP',
     accent: '#16a34a',
-    accentSoft: '#ecfdf5'
+    accentSoft: '#ecfdf5',
+    icon: `
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <rect x="3" y="4" width="6" height="6" rx="1" />
+        <rect x="11" y="4" width="10" height="6" rx="1" />
+        <rect x="3" y="12" width="18" height="8" rx="1" />
+      </svg>`
   },
   {
-    number: '04',
+    number: '06',
     title: 'Mejoras en curso',
     summary: 'Funciones que se están incorporando para ampliar la experiencia y capacidades del producto.',
     points: [
@@ -61,40 +119,35 @@ const slides = [
     topic: 'Roadmap',
     level: 'En progreso',
     accent: '#ef4444',
-    accentSoft: '#fee2e2'
-  },
-  {
-    number: '05',
-    title: 'Tecnologías',
-    summary: 'Stack utilizado y consideraciones de despliegue y observabilidad.',
-    points: [
-      'Frontend: Vue 3, TypeScript, Vite, Pinia, Tailwind',
-      'Backend: ASP.NET Core, Entity Framework, JWT',
-      'Persistencia: SQL Server — Infra: AWS (docker/CI opcional)'
-    ],
-    focus: 'Stack',
-    topic: 'Tech',
-    level: 'Infra',
-    accent: '#f59e0b',
-    accentSoft: '#fffbeb'
-  },
-  {
-    number: '06',
-    title: 'Restricciones',
-    summary: 'Condiciones y limitaciones a considerar durante el desarrollo y la entrega.',
-    points: [
-      'No introducir tecnologías fuera del stack definido',
-      'Cumplir con normativas de seguridad y control de acceso',
-      'Mantener dependencias mínimas para despliegue en AWS'
-    ],
-    focus: 'Riesgos',
-    topic: 'Constraints',
-    level: 'Risk',
-    accent: '#64748b',
-    accentSoft: '#f1f5f9'
+    accentSoft: '#fee2e2',
+    icon: `
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M12 2 L15 8 L21 9 L16 13 L17 20 L12 16 L7 20 L8 13 L3 9 L9 8 Z" />
+      </svg>`
   },
   {
     number: '07',
+    title: 'Acta de cierre',
+    summary: 'Registro formal de entrega, aceptación y cierre administrativo del proyecto.',
+    points: [
+      'Listado de entregables entregados y versión final',
+      'Confirmación de aceptación por los stakeholders',
+      'Firma del responsable y cierre administrativo'
+    ],
+    focus: 'Cierre',
+    topic: 'Acta',
+    level: 'Final',
+    accent: '#0ea5e9',
+    accentSoft: '#e0f7ff',
+    icon: `
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M3 12h18v8a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-8z" />
+        <path d="M12 2v10" />
+        <circle cx="12" cy="16" r="1" />
+      </svg>`
+  },
+  {
+    number: '08',
     title: 'Cronología',
     summary: 'Evolución rápida: lo implementado y lo que se está agregando actualmente.',
     points: [
@@ -102,23 +155,53 @@ const slides = [
       '2. Cambios realizados: frontend moderno, navegación por rutas, componentes y bot guía',
       '3. Cambios en curso: pagos en la billetera, mejoras de UX y validaciones'
     ],
-    focus: 'Evolución',
+    focus: 'Cronología',
     topic: 'Cronología',
     level: 'Resumen',
     accent: '#06b6d4',
-    accentSoft: '#ecfeff'
+    accentSoft: '#ecfeff',
+    icon: `
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <rect x="3" y="4" width="18" height="16" rx="1" />
+        <rect x="7" y="8" width="3" height="3" fill-role />
+        <rect x="12" y="8" width="3" height="3" fill-role />
+        <rect x="7" y="13" width="3" height="3" fill-role />
+        <rect x="12" y="13" width="3" height="3" fill-role />
+      </svg>`
   }
-]
+    ,
+    {
+      number: '09',
+      title: 'Lecciones aprendidas',
+      summary: 'Puntos clave que recogimos durante el desarrollo del proyecto.',
+      points: [
+        'Importancia de la comunicación continua',
+        'Priorizar funcionalidades según valor al usuario',
+        'Pruebas tempranas y feedback frecuente'
+      ],
+      focus: 'Aprendizaje',
+      topic: 'Lecciones',
+      level: 'Resumen',
+      accent: '#10b981',
+      accentSoft: '#ecfdf3',
+      icon: `
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M12 2 L20 8 L12 22 L4 8 Z" />
+        </svg>`
+    }
+  ]
 
 // DOM elements
 const slideBadge = document.getElementById('slideBadge')
 const slideCard = document.getElementById('slideCard')
 const slideTitle = document.getElementById('slideTitle')
 const slideSummary = document.getElementById('slideSummary')
+const slideGallery = document.getElementById('slideGallery')
 const slidePoints = document.getElementById('slidePoints')
 const slideFocus = document.getElementById('slideFocus')
 const slideTopic = document.getElementById('slideTopic')
 const slideLevel = document.getElementById('slideLevel')
+const slideIcon = document.getElementById('slideIcon')
 const prevBtn = document.getElementById('prevBtn')
 const nextBtn = document.getElementById('nextBtn')
 const dots = document.getElementById('dots')
@@ -163,10 +246,41 @@ const renderSlide = () => {
   slideTitle.textContent = slide.title
   slideSummary.textContent = slide.summary
   slideFocus.textContent = slide.focus
+  if (slideIcon) {
+    slideIcon.innerHTML = slide.icon || ''
+    slideIcon.style.color = slide.accent || getComputedStyle(document.documentElement).getPropertyValue('--accent')
+  }
   slideTopic.textContent = slide.topic
   slideLevel.textContent = slide.level
 
+  if (slideGallery) {
+    slideGallery.innerHTML = ''
+    const images = Array.isArray(slide.images) ? slide.images : []
+    slideGallery.hidden = images.length === 0
+
+    images.forEach((imageData, index) => {
+      const src = typeof imageData === 'string' ? imageData : imageData.src
+      const name = typeof imageData === 'string' ? '' : imageData.name
+      const figure = document.createElement('figure')
+      figure.className = 'gallery-item'
+
+      const image = document.createElement('img')
+      image.src = src
+      image.alt = `${slide.title} - foto ${index + 1}`
+      image.loading = 'lazy'
+
+      figure.appendChild(image)
+      if (name) {
+        const caption = document.createElement('figcaption')
+        caption.textContent = name
+        figure.appendChild(caption)
+      }
+      slideGallery.appendChild(figure)
+    })
+  }
+
   slidePoints.innerHTML = ''
+  slidePoints.hidden = slide.points.length === 0
   slide.points.forEach((point) => {
     const item = document.createElement('li')
     item.textContent = point
