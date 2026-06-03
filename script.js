@@ -86,7 +86,7 @@ const slides = [
   },
   {
     number: '05',
-    title: 'Alcance funcional',
+    title: 'Requerimientos funcionales',
     summary:
       'Módulos principales y cobertura funcional priorizados para la entrega inicial.',
     points: [
