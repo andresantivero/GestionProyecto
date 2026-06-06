@@ -42,13 +42,13 @@ const slides = [
   },
   {
     number: '03',
-    title: 'Qué resuelve',
+    title: 'Qué es Dolarito',
     summary:
-      'Control de cuentas, transacciones y conversión de moneda desde un único punto, con flujos claros y seguridad.',
+      'Dolarito es una plataforma financiera pensada para manejar cambios de moneda, pagos y transferencias desde un solo lugar.',
     points: [
-      'Control de cuentas y transacciones',
-      'Conversión entre ARS y USD con actualización visual',
-      'Operaciones seguras: JWT, refresh token y protección de rutas'
+      'Cambio de pesos a dólares y de dólares a pesos',
+      'Mejor cotización disponible durante las 24 horas',
+      'Pago de servicios y transferencias entre cuentas'
     ],
     focus: 'Problema',
     topic: 'Valor',
@@ -63,6 +63,25 @@ const slides = [
   },
   {
     number: '04',
+    title: 'Mejoras incorporadas',
+    summary: 'Funciones que ya fueron incorporadas para ampliar la experiencia y capacidades del producto.',
+    points: [
+      'Pagos en la billetera',
+      'Bot con árbol de decisión para guía al usuario',
+      'Mejoras de UX, validaciones y flujos'
+    ],
+    focus: 'Evolución',
+    topic: 'Roadmap',
+    level: 'En progreso',
+    accent: '#ef4444',
+    accentSoft: '#fee2e2',
+    icon: `
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M12 2 L15 8 L21 9 L16 13 L17 20 L12 16 L7 20 L8 13 L3 9 L9 8 Z" />
+      </svg>`
+  },
+  {
+    number: '05',
     title: 'Metodología Scrum',
     summary: 'Scrum como marco de trabajo para organizar tareas, priorizar entregas y revisar avances de forma continua.',
     points: [
@@ -85,18 +104,18 @@ const slides = [
       </svg>`
   },
   {
-    number: '05',
-    title: 'Requerimientos funcionales',
+    number: '06',
+    title: 'Alcances',
     summary:
-      'Módulos principales y cobertura funcional priorizados para la entrega inicial.',
+      'Migración de las tecnologías de S3, EC2 y RDS a contenedores sobre Linux Ubuntu dentro de AWS.',
     points: [
-      'Autenticación y usuarios',
-      'Billetera y balances',
-      'Transacciones, cambio y soporte (6 módulos principales)'
+      'Migrar S3, EC2 y RDS a una arquitectura con contenedores',
+      'Ejecutar los servicios sobre Linux Ubuntu dentro de AWS',
+      'Modernizar la infraestructura para mejorar despliegue y administración'
     ],
-    focus: 'Módulos',
-    topic: 'Alcance',
-    level: 'MVP',
+    focus: 'Infraestructura',
+    topic: 'AWS',
+    level: 'Alcance técnico',
     accent: '#16a34a',
     accentSoft: '#ecfdf5',
     icon: `
@@ -107,26 +126,29 @@ const slides = [
       </svg>`
   },
   {
-    number: '06',
-    title: 'Mejoras en curso',
-    summary: 'Funciones que se están incorporando para ampliar la experiencia y capacidades del producto.',
+    number: '07',
+    title: 'Requerimientos, US y Testing',
+    summary: 'Conjunto de requerimientos funcionales, historias de usuario y validaciones de prueba que definen el alcance del proyecto.',
     points: [
-      'Pagos en la billetera',
-      'Bot con árbol de decisión para guía al usuario',
-      'Mejoras de UX, validaciones y flujos'
+      'Requerimientos funcionales: migración de S3, EC2 y RDS a contenedores en Ubuntu sobre AWS',
+      'Historias de usuario: definición de flujos para administración, despliegue y uso del sistema',
+      'Testing: validación de funcionamiento, despliegue y comportamiento esperado'
     ],
-    focus: 'Evolución',
-    topic: 'Roadmap',
-    level: 'En progreso',
-    accent: '#ef4444',
-    accentSoft: '#fee2e2',
+    focus: 'Calidad',
+    topic: 'Análisis',
+    level: 'Validación',
+    accent: '#06b6d4',
+    accentSoft: '#ecfeff',
     icon: `
       <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <path d="M12 2 L15 8 L21 9 L16 13 L17 20 L12 16 L7 20 L8 13 L3 9 L9 8 Z" />
+        <rect x="4" y="4" width="16" height="16" rx="2" />
+        <path d="M8 8H16" />
+        <path d="M8 12H16" />
+        <path d="M8 16H13" />
       </svg>`
   },
   {
-    number: '07',
+    number: '08',
     title: 'Acta de cierre',
     summary: 'Registro formal de entrega, aceptación y cierre administrativo del proyecto.',
     points: [
@@ -144,29 +166,6 @@ const slides = [
         <path d="M3 12h18v8a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-8z" />
         <path d="M12 2v10" />
         <circle cx="12" cy="16" r="1" />
-      </svg>`
-  },
-  {
-    number: '08',
-    title: 'Cronología',
-    summary: 'Evolución rápida: lo implementado y lo que se está agregando actualmente.',
-    points: [
-      '1. Base funcional realizada: autenticación, usuarios, transacciones, billetera ARS/USD',
-      '2. Cambios realizados: frontend moderno, navegación por rutas, componentes y bot guía',
-      '3. Cambios en curso: pagos en la billetera, mejoras de UX y validaciones'
-    ],
-    focus: 'Cronología',
-    topic: 'Cronología',
-    level: 'Resumen',
-    accent: '#06b6d4',
-    accentSoft: '#ecfeff',
-    icon: `
-      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <rect x="3" y="4" width="18" height="16" rx="1" />
-        <rect x="7" y="8" width="3" height="3" fill-role />
-        <rect x="12" y="8" width="3" height="3" fill-role />
-        <rect x="7" y="13" width="3" height="3" fill-role />
-        <rect x="12" y="13" width="3" height="3" fill-role />
       </svg>`
   }
     ,
@@ -187,6 +186,26 @@ const slides = [
       icon: `
         <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
           <path d="M12 2 L20 8 L12 22 L4 8 Z" />
+        </svg>`
+    },
+    {
+      number: '10',
+      title: 'Muchas gracias',
+      summary: 'Gracias por acompañarnos y apoyar el proyecto. Escaneá el QR para acceder y empezar a operar con Dolarito.',
+      points: [],
+      images: [
+        'img/QR_Dolarito.png'
+      ],
+      focus: 'Cierre',
+      topic: 'Agradecimiento',
+      level: 'Final',
+      accent: '#f59e0b',
+      accentSoft: '#fff7ed',
+      icon: `
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M4 6h16v12H4z" />
+          <path d="M8 10h8" />
+          <path d="M8 14h5" />
         </svg>`
     }
   ]
@@ -257,6 +276,7 @@ const renderSlide = () => {
     slideGallery.innerHTML = ''
     const images = Array.isArray(slide.images) ? slide.images : []
     slideGallery.hidden = images.length === 0
+    slideGallery.classList.toggle('qr-slide', slide.number === '10')
 
     images.forEach((imageData, index) => {
       const src = typeof imageData === 'string' ? imageData : imageData.src
