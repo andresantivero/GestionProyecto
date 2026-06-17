@@ -2,7 +2,7 @@
 const slides = [
   {
     number: '01',
-    title: 'Prestacion Final Gestion de Proyectos',
+    title: 'Presentación Final Gestion de Proyectos',
     summary: 'Presentación final del proyecto — gestión y resultados.',
     points: [],
     focus: 'Portada',
