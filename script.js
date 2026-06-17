@@ -107,23 +107,23 @@ const slides = [
     number: '06',
     title: 'Alcances',
     summary:
-      'Migración de las tecnologías de S3, EC2 y RDS a contenedores sobre Linux Ubuntu dentro de AWS.',
+      'Desarrollo de una billetera virtual exclusivamente web (MVP) para la gestión segura de saldo, transferencias, pago de servicios y operaciones cambiarias en tiempo real.',
     points: [
-      'Migrar S3, EC2 y RDS a una arquitectura con contenedores',
-      'Ejecutar los servicios sobre Linux Ubuntu dentro de AWS',
-      'Modernizar la infraestructura para mejorar despliegue y administración'
+      'Exclusividad Web: Plataforma responsive centrada en la estabilidad de las 4 funciones core (excluye apps móviles nativas y cripto).',
+      'Compliance y Seguridad: Cumplimiento regulatorio estricto (validación KYC obligatoria, límites por perfil) y transacciones bajo TLS 1.3.',
+      'Restricciones de Negocio: Presupuesto cerrado y Time-to-Market inamovible; dependencias sujetas a la disponibilidad de APIs de terceros.'
     ],
-    focus: 'Infraestructura',
-    topic: 'AWS',
-    level: 'Alcance técnico',
+    focus: 'MVP Fintech',
+    topic: 'Producto Core',
+    level: 'Alcance General',
     accent: '#16a34a',
     accentSoft: '#ecfdf5',
     icon: `
-      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <rect x="3" y="4" width="6" height="6" rx="1" />
-        <rect x="11" y="4" width="10" height="6" rx="1" />
-        <rect x="3" y="12" width="18" height="8" rx="1" />
-      </svg>`
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M21 12V7H5a2 2 0 0 1 0-4h14v4" />
+  <path d="M3 5v14a2 2 0 0 0 2 2h16v-5" />
+  <path d="M18 12a2 2 0 0 0 0 4h4v-4Z" />
+</svg>
   },
   {
     number: '07',
